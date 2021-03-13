@@ -42,9 +42,10 @@
 				 </div>
 				  <span class="menu"> </span> 
 				   <ul>
-						<li class="active"><a href="index.html">Bloglar</a></li>						
-						<li><a href="about.html">Hakkımızda</a></li>	
-						<li><a href="contact.html">İletişim</a></li>						
+						<li class="active">
+						<a href="Default.aspx">Bloglar</a></li>						
+						<li><a href="Hakkimda.aspx">Hakkımızda</a></li>	
+						<li><a href="İletisim.aspx">İletişim</a></li>						
 				 </ul>
 			 </div>
 			 <div class="clearfix"></div>
