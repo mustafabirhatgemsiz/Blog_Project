@@ -109,6 +109,7 @@
     <Content Include="web\js\jquery.min.js" />
     <Content Include="web\js\move-top.js" />
     <Content Include="web\single.html" />
+    <Content Include="Iletisim.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BlogDetay.aspx.cs">
@@ -173,6 +174,13 @@
       <DependentUpon>Kullanici.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Iletisim.aspx.cs">
+      <DependentUpon>Iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iletisim.aspx.designer.cs">
+      <DependentUpon>Iletisim.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Kullanici.Master" />
