@@ -75,6 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminSayfalar\Bloglar.aspx" />
     <Content Include="BlogDetay.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Entity\Model1.Context.tt">
@@ -112,6 +113,20 @@
     <Content Include="Iletisim.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSayfalar\Bloglar.aspx.cs">
+      <DependentUpon>Bloglar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminSayfalar\Bloglar.aspx.designer.cs">
+      <DependentUpon>Bloglar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BlogDetay.aspx.cs">
       <DependentUpon>BlogDetay.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -191,6 +206,7 @@
     <Content Include="Entity\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="Admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
