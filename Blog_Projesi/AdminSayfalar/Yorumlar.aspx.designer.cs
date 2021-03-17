@@ -11,7 +11,7 @@ namespace Blog_Projesi.AdminSayfalar
 {
 
 
-    public partial class Bloglar
+    public partial class Yorumlar
     {
 
         /// <summary>

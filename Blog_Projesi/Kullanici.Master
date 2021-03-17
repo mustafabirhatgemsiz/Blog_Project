@@ -31,7 +31,7 @@
 <div class="header">  
 	 <div class="container">
 		  <div class="logo">
-			  <a href="index.html"> <img src="web/images/logo.jpg" /></a>
+			  <a href="Default.aspx"> <img src="web/images/logo.jpg" /></a>
 		  </div>
 			 <div class="top-menu">
 				 <div class="search">
