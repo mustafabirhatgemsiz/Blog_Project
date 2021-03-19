@@ -115,5 +115,14 @@
       <End Role="TBLBLOG" EntitySet="TBLBLOG" />
       <End Role="TBLYORUM" EntitySet="TBLYORUM" />
     </AssociationSet>
+    <EntitySet Name="TBLADMIN" EntityType="BlogModel.TBLADMIN" />
   </EntityContainer>
+  <EntityType Name="TBLADMIN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KULLANICIADI" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="SIFRE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
 </Schema>

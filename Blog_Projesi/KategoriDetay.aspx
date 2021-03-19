@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Kullanici.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Blog_Projesi.Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Kullanici.Master" AutoEventWireup="true" CodeBehind="KategoriDetay.aspx.cs" Inherits="Blog_Projesi.KategoriDetay" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
    	 <div class="container">
@@ -32,15 +32,12 @@
 					 </ul>
 				 </div>
 				 <div class="comments">
-					 <h3>Son Yorumlar</h3>
-                     <asp:Repeater ID="Repeater4" runat="server">
-						 <ItemTemplate>
+					 <h3>Yeni Yorumlar</h3>
 					 <ul>
-					 <li><a href="#"> <b><%# Eval("KULLANICIAD") %>:</b> <%# Eval("YORUMICERIK") %></a></li>
+					 <li><a href="#">Amada Doe </a> on <a href="#">Hello World!</a></li>
+					 <li><a href="#">Peter Doe </a> on <a href="#"> Photography</a></li>
+					 <li><a href="#">Steve Roberts  </a> on <a href="#">HTML5/CSS3</a></li>
 					 </ul>
-						 </ItemTemplate>
-                     </asp:Repeater>
-
 				 </div>
 				 <div class="clearfix"></div>
 				 <div class="archives">
@@ -48,7 +45,7 @@
 					 <ul>
 					 <li><a href="#">Ocak 2021</a></li>
 					 <li><a href="#">Şubat 2021</a></li>
-					 <li><a href="#">Mart 2021</a></li>		
+					 <li><a href="#">Mart 2021</a></li>
 					 </ul>
 				 </div>
 				 <div class="categories">
@@ -56,7 +53,7 @@
 					 <ul>
                          <asp:Repeater ID="Repeater2" runat="server">
 							 <ItemTemplate>
-								  <li><a href="KategoriDetay.aspx?KATEGORIID=<%# Eval("KATEGORIID") %>"> <%# Eval("KATEGORIAD") %></a> </li>
+								  <li><a href="KategoriDetay.aspx?KATEGORIID=<%# Eval("KATEGORIID") %>"><%# Eval("KATEGORIAD") %></a> </li>
 							 </ItemTemplate>
                          </asp:Repeater>
 					
@@ -69,3 +66,4 @@
 		  </div>
 	  </div>
 </asp:Content>
+

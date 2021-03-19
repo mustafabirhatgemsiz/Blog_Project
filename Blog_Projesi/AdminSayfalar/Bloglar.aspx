@@ -4,7 +4,7 @@
     <a href="YeniBlog.aspx" class="btn btn-primary">Yeni Blog</a>
      <br />
      <br />
-    <table class="table table-bordered" >
+    <table class="table table-bordered" style="font-size: 19px">
         
        <tr>
            <th>ID</th>
@@ -17,7 +17,7 @@
        </tr>
         <asp:Repeater ID="Repeater1" runat="server">
             <ItemTemplate>
-                <tr >
+                <tr>
                     <td><%#Eval ("BLOGID") %></td>
                     <td><%#Eval ("BLOGBASLIK") %></td>
                     <td><%#Eval ("BLOGTARIH") %></td>

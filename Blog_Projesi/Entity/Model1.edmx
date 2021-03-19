@@ -4,7 +4,17 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="BlogModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="BlogModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Blog.dbo.TBLADMIN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="TBLADMIN">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KULLANICIADI" Type="varchar" MaxLength="20" />
+          <Property Name="SIFRE" Type="varchar" MaxLength="10" />
+        </EntityType>
         <EntityType Name="TBLBLOG">
           <Key>
             <PropertyRef Name="BLOGID" />
@@ -102,6 +112,13 @@
           <EntitySet Name="TBLKATEGORI" EntityType="Self.TBLKATEGORI" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLTUR" EntityType="Self.TBLTUR" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLYORUM" EntityType="Self.TBLYORUM" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TBLADMIN" EntityType="Self.TBLADMIN" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [TBLADMIN].[ID] AS [ID], 
+    [TBLADMIN].[KULLANICIADI] AS [KULLANICIADI], 
+    [TBLADMIN].[SIFRE] AS [SIFRE]
+    FROM [dbo].[TBLADMIN] AS [TBLADMIN]</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="FK_TBLBLOG_TBLKATEGORI" Association="Self.FK_TBLBLOG_TBLKATEGORI">
             <End Role="TBLKATEGORI" EntitySet="TBLKATEGORI" />
             <End Role="TBLBLOG" EntitySet="TBLBLOG" />
@@ -115,8 +132,7 @@
             <End Role="TBLYORUM" EntitySet="TBLYORUM" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="BlogModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -235,7 +251,16 @@
             <End Role="TBLBLOG" EntitySet="TBLBLOG" />
             <End Role="TBLYORUM" EntitySet="TBLYORUM" />
           </AssociationSet>
+          <EntitySet Name="TBLADMIN" EntityType="BlogModel.TBLADMIN" />
         </EntityContainer>
+        <EntityType Name="TBLADMIN">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KULLANICIADI" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="SIFRE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -299,6 +324,15 @@
                 <ScalarProperty Name="MAIL" ColumnName="MAIL" />
                 <ScalarProperty Name="YORUMICERIK" ColumnName="YORUMICERIK" />
                 <ScalarProperty Name="YORUMBLOG" ColumnName="YORUMBLOG" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBLADMIN">
+            <EntityTypeMapping TypeName="BlogModel.TBLADMIN">
+              <MappingFragment StoreEntitySet="TBLADMIN">
+                <ScalarProperty Name="SIFRE" ColumnName="SIFRE" />
+                <ScalarProperty Name="KULLANICIADI" ColumnName="KULLANICIADI" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

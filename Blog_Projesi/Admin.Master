@@ -19,8 +19,8 @@
     <ul class="nav navbar-nav">
       <li><a href="/AdminSayfalar/Bloglar.aspx">Bloglar</a></li>
       <li><a href="/AdminSayfalar/Yorumlar.aspx">Yorumlar</a></li>
-      <li><a href="#">Mesajlar</a></li>
-      <li><a href="#">Hakkımızda</a></li>
+        <li><a href="/AdminSayfalar/İstatistik.aspx">İstatistikler</a></li>
+      <li><a href="/AdminSayfalar/Mesaj.aspx">Mesajlar</a></li>
     </ul>
   </div>
 </nav>

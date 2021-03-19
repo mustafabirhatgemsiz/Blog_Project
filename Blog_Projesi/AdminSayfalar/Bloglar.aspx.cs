@@ -13,6 +13,15 @@ namespace Blog_Projesi.AdminSayfalar
         BlogEntities db = new  BlogEntities();
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+            if(Session["KULLANICI"]== null)
+            {
+                Response.Redirect("~/Login.aspx");
+            }
+            else
+            {
+               Response.Write("HOŞGELDİNİZ: "+ Session["KULLANICI"].ToString());
+            }
             Repeater1.DataSource = db.TBLBLOG.ToList();
             Repeater1.DataBind();
         }

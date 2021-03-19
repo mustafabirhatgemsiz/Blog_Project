@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Yorumlar.aspx.cs" Inherits="Blog_Projesi.AdminSayfalar.Yorumlar" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <table class="table table-bordered" >
+    <table class="table table-bordered" style="font-size: 19px" >
         
        <tr>
            <th>ID</th>

@@ -14,6 +14,7 @@
         <AssociationConnector Association="BlogModel.FK_TBLBLOG_TBLKATEGORI" ManuallyRouted="false" />
         <AssociationConnector Association="BlogModel.FK_TBLBLOG_TBLTUR" ManuallyRouted="false" />
         <AssociationConnector Association="BlogModel.FK_TBLYORUM_TBLBLOG" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="BlogModel.TBLADMIN" Width="1.5" PointX="7.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
