@@ -1,11 +1,36 @@
 # Blog_Project
-Blog Project with .net
-![Ekran görüntüsü 2021-03-19 150915](https://user-images.githubusercontent.com/77343458/111778886-6c7d8680-88c6-11eb-846d-370a729d01b3.png)
-![Ekran görüntüsü 2021-03-19 150957](https://user-images.githubusercontent.com/77343458/111778909-756e5800-88c6-11eb-8515-93582978ae0c.png)
-![Ekran görüntüsü 2021-03-19 151026](https://user-images.githubusercontent.com/77343458/111778911-7606ee80-88c6-11eb-9f9c-26857b49ab03.png)
-![Ekran görüntüsü 2021-03-19 151058](https://user-images.githubusercontent.com/77343458/111778913-7606ee80-88c6-11eb-89dd-9d5ff1f11c96.png)
-![Ekran görüntüsü 2021-03-19 151120](https://user-images.githubusercontent.com/77343458/111778919-77d0b200-88c6-11eb-8918-486158160df5.png)
-![Ekran görüntüsü 2021-03-19 151132](https://user-images.githubusercontent.com/77343458/111778921-77d0b200-88c6-11eb-9130-2ac972136c1c.png)
-![Ekran görüntüsü 2021-03-19 151150](https://user-images.githubusercontent.com/77343458/111778923-78694880-88c6-11eb-8237-7dd4adf07ee4.png)
-![Ekran görüntüsü 2021-03-19 151209](https://user-images.githubusercontent.com/77343458/111778926-78694880-88c6-11eb-9e18-aa70a421830a.png)
+
+- Blog Project with .net -
+
+- HOME PAGE -
+
+![a](https://user-images.githubusercontent.com/77343458/111784092-04ca3a00-88cc-11eb-889b-7429cde95568.png)
+
+- ABOUT ME -
+
+![b](https://user-images.githubusercontent.com/77343458/111784099-05fb6700-88cc-11eb-8a84-dd6ca4bcc080.png)
+
+- CONTACT -
+
+![c](https://user-images.githubusercontent.com/77343458/111784101-05fb6700-88cc-11eb-9050-4122443abed3.png)
+
+- ADMİN LOGİN PANEL -
+
+![dlogiin](https://user-images.githubusercontent.com/77343458/111784103-0693fd80-88cc-11eb-8483-55b4cf5716bc.png)
+
+- BLOGS MANAGEMENT -
+
+![ebloglar managment](https://user-images.githubusercontent.com/77343458/111784107-07c52a80-88cc-11eb-8811-964abb8ed23c.png)
+
+![ebloglar managment1](https://user-images.githubusercontent.com/77343458/111784108-085dc100-88cc-11eb-8d70-5d3465f18221.png)
+
+![fyorum](https://user-images.githubusercontent.com/77343458/111784110-085dc100-88cc-11eb-94c3-60928fcb8cd8.png)
+
+![gistatistik](https://user-images.githubusercontent.com/77343458/111784114-08f65780-88cc-11eb-82ab-c13362620801.png)
+
+![jmesajlar](https://user-images.githubusercontent.com/77343458/111784115-08f65780-88cc-11eb-8086-b4dd58037750.png)
+
+
+
+
 
