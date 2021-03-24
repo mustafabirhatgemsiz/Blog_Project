@@ -1,6 +1,6 @@
 # blog_project
 
-- Blog Project with .net -
+- Blog Project with ASP.NET -
 
 - HOME PAGE -
 
